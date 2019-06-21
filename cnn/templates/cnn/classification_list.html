@@ -1,0 +1,23 @@
+{% extends "cnn/base.html" %}
+
+{% block content %}
+
+<div class="card-columns">
+
+    {% for item in items %}
+
+  <div class="card">
+    <img src="{{item.img.url}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Result: {{item.prediction}}}</h5>
+      <a class="btn btn-sm btn-info" href="{% url 'update' item.id %}">Edit</a>
+    <a class="btn btn-sm btn-danger" href="{% url 'delete' item.id %}">Delete</a>
+
+    </div>
+  </div>
+
+  {% endfor %}
+
+</div>
+    
+{% endblock content %}
