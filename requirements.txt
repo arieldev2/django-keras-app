@@ -14,7 +14,7 @@ numpy==1.16.4
 Pillow==6.0.0
 protobuf==3.8.0
 pytz==2019.1
-PyYAML==5.1.1
+PyYAML==5.4
 scipy==1.3.0
 six==1.12.0
 sqlparse==0.3.0
